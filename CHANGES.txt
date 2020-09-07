@@ -1,0 +1,27 @@
+Interface and Architecture:
+
+    Added folders JS and CSS.
+
+
+
+Landing Page Behavior:
+
+    Changed anchors to list elements in ul (in navbar.js navbar generation part).
+
+
+It should be clear which section is being viewed while scrolling through the page:
+
+    Added orange border to the left and right.
+
+
+The ReadMe file should have non-default text in it that is specific to this project. It doesn’t have to be thorough, but should have some basic information, and use correct markdown:
+
+    Added the reason for the project, what it seeks to accomplish and the languages used.
+
+
+
+Comments are present and effectively explain longer code procedure when necessary:
+    Added comments (mainly to the JS file)
+
+
+

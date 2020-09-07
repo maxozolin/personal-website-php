@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 70px;
+  padding: 0 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #c4c4c4;
+}
+
+header .navbar li {
+  display: inline;
+}
+
+section.firstsection .wrapper {
+  background: black;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+section.firstsection .wrapper .text {
+  z-index: 30;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+  color: white;
+  /* I make websites */
+  font-family: "Pattaya", sans-serif;
+  font-size: 140px;
+  text-shadow: 6px 6px black;
+}
+
+div.separator {
+  position: relative;
+  width: 100%;
+  height: 200vh;
+  background: #535353;
+  z-index: 999;
+}
+
+.background.svgs {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  top: 90px;
+}
+
+.background.svgs .wrapper {
+  height: clamp(800px, 80vh, 2000px);
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 1400px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2% 2% 4% 12% 1% 15% 1% 19% 5% 5% 8% 4% 8% auto;
+      grid-template-rows: 2% 2% 4% 12% 1% 15% 1% 19% 5% 5% 8% 4% 8% auto;
+  -ms-grid-columns: 3% 4% 15% 5% 5% 4% 20% 15% 5% 5% 19%;
+      grid-template-columns: 3% 4% 15% 5% 5% 4% 20% 15% 5% 5% 19%;
+}
+
+.background.svgs .wrapper img {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 5;
+  grid-row: 3/8;
+  height: 400px;
+  width: auto;
+  border-radius: 500px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.background.svgs .wrapper .x1 {
+  -ms-grid-row: 10;
+  -ms-grid-row-span: 1;
+  grid-row: 10/11;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.background.svgs .wrapper .burger {
+  margin-top: auto;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 2;
+  grid-row: 6/8;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 1;
+  grid-column: 7/8;
+}
+
+.background.svgs .wrapper .ff {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+  -ms-grid-column: 10;
+  -ms-grid-column-span: 1;
+  grid-column: 10/11;
+}
+
+.background.svgs .wrapper .x2 {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5/6;
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 1;
+  grid-column: 8/9;
+}
+
+.background.svgs .wrapper .circle {
+  -ms-grid-row: 11;
+  grid-row: 11;
+  -ms-grid-column: 9;
+  grid-column: 9;
+}
+
+html * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}

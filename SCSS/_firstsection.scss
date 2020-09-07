@@ -1,0 +1,23 @@
+section.firstsection {
+    .wrapper {
+        background: black;
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        .text {
+            z-index: 30;
+            transform: translate(0, -50%);
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            width: 100%;
+            color: white;
+            // color: white;
+            /* I make websites */
+            font-family: "Pattaya", sans-serif;
+            font-size: 140px;
+            text-shadow: 6px 6px black;
+        }
+    }
+}

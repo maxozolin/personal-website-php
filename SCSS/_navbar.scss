@@ -1,0 +1,18 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    .navbar {
+        display: flex;
+        // border: 2px solid red;
+        justify-content: space-between;
+        height: 70px;
+        padding: 0 40px;
+        align-items: center;
+
+        background: #c4c4c4;
+        li {
+            display: inline;
+        }
+    }
+}
