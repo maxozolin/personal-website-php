@@ -1,4 +1,5 @@
 section.firstsection {
+    height: 80vh;
     .wrapper {
         background: black;
         width: 100%;
@@ -15,9 +16,13 @@ section.firstsection {
             color: white;
             // color: white;
             /* I make websites */
-            font-family: "Pattaya", sans-serif;
+            font-family: "Oswald", sans-serif;
             font-size: 140px;
-            text-shadow: 6px 6px black;
+            text-shadow: 10px 10px 0 black;
+            @media (max-width: 930px) {
+                font-size: 14vw;
+                text-shadow: 1vw 1vw 0 black;
+            }
         }
     }
 }

@@ -2,6 +2,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 999;
+    color: rgb(255, 255, 255);
     .navbar {
         display: flex;
         // border: 2px solid red;
@@ -10,9 +11,26 @@ header {
         padding: 0 40px;
         align-items: center;
 
-        background: #c4c4c4;
+        background: #5e1414;
+        h2{
+            font-family: "Trade Winds";
+            font-size: 40px;
+        }
         li {
+            // border:2px solid red;
+            font-family: 'Oswald', sans-serif;
+            font-size: 30px;
+            margin: 0 2px ;
+            padding: 0 16px;
             display: inline;
+            transition: .5s all ease;
+            cursor: pointer;
+            border-radius: 2px;
+
+            &:hover{
+                background: white;
+                color: black;
+            }
         }
     }
 }

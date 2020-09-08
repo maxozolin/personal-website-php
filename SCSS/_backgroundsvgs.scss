@@ -4,6 +4,8 @@
     width: 100%;
     top: 90px;
     .wrapper {
+        position: sticky;
+        top:10px;
         height:clamp(800px, 80vh, 2000px);
         // border: 2px solid red;
         margin-left: 50%;
@@ -18,9 +20,10 @@
             height: 400px;
             width: auto;
             border-radius: 500px;
-            filter: grayscale(100%);
+            // filter: grayscale(100%);
         }
         .x1{
+            
             grid-row: 10/11;
             grid-column: 2/3;
         }
@@ -38,8 +41,49 @@
             grid-column: 8/9;
         }
         .circle{
+            $barberpole-color: rgb(255, 255, 255);
             grid-row: 11;
             grid-column: 9;
+            background: rgb(0, 0, 0);
+            clip-path: circle(50% at center);
+            transform: rotate(90deg);
+            background-size: 60px 60px;
+            background-image: linear-gradient(
+              45deg, 
+              $barberpole-color  25%, 
+              transparent       25%, 
+              transparent       50%, 
+              $barberpole-color  50%, 
+              $barberpole-color  75%, 
+              transparent       75%, 
+              transparent
+            );  
+            animation: barberpole .5s linear infinite;
+        }
+        @media(max-width:1083px) {
+            img {
+                grid-column: 1/12;
+                margin: auto;
+            }
+            .x2{
+                grid-row: 9;
+                grid-column: 8/9;
+            }
+            .burger{
+                margin: auto 0 0 auto;
+                grid-row: 12;
+                grid-column: 8;
+            }
+            .circle{
+                grid-row: 11;
+                grid-column: 5;
+            }
         }
     }
 }
+
+
+@keyframes barberpole {
+    from { background-position: 0 0; }
+    to   { background-position: -60px 0px; }
+  }
