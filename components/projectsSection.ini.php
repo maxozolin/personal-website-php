@@ -1,5 +1,5 @@
 <section class="projectsSection">
-    <div class=projects>
+    <div class=content>
         To be done
     </div>
 </section>

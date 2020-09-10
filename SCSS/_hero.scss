@@ -5,24 +5,25 @@ section.hero {
         width: 100%;
         height: 100%;
         position: relative;
-
-        .text {
-            z-index: 30;
-            transform: translate(0, -50%);
-            position: absolute;
-            text-align: center;
-            top: 50%;
-            width: 100%;
-            color: white;
-            // color: white;
-            /* I make websites */
-            font-family: "Oswald", sans-serif;
-            font-size: 140px;
-            text-shadow: 10px 10px 0 black;
-            @media (max-width: 930px) {
-                font-size: 14vw;
-                text-shadow: 1vw 1vw 0 black;
-            }
+        z-index: -2;
+    }
+    .text {
+        position: relative;
+        z-index: 10;
+        transform: translate(0, -50%);
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        width: 100%;
+        color: white;
+        // color: white;
+        /* I make websites */
+        font-family: "Oswald", sans-serif;
+        font-size: 140px;
+        text-shadow: 10px 10px 0 black;
+        @media (max-width: 930px) {
+            font-size: 14vw;
+            text-shadow: 1vw 1vw 0 black;
         }
     }
 }

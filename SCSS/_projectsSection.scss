@@ -1,2 +1,10 @@
 section.projectsSection {
+    position: relative;
+    height: 200vh;
+    background: rgb(231, 231, 231);
+    .content{
+        width: 70%;
+        margin: auto;
+        background: white;
+    }
 }
