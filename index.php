@@ -7,6 +7,8 @@
     <title>Maxim Ozolin</title>
     <link rel="stylesheet" href="./CSS/style.css">
 
+    <?php
+    ?>
 </head>
 
 <body>
@@ -24,7 +26,11 @@
 </body>
 <footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg==" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./JS/animations.js"></script>
+    <script src="./JS/jQueryTest.js"></script>
+    <?php
+    ?>
 </footer>
 
 </html>

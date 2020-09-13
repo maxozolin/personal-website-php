@@ -1,5 +1,5 @@
 <section class="projectsSection">
     <div class=content>
-        To be done
+        <h2>Projects</h2>
     </div>
 </section>

@@ -1,6 +1,6 @@
     const mainwrapper = document.querySelector(".mainwrapper")
-    const firstsectionwrapper = document.querySelector(".firstsection .wrapper")
-    const firstsectiontext = firstsectionwrapper.querySelector(".text")
+    const firstsectionwrapper = document.querySelector(".hero .wrapper")
+    const firstsectiontext = document.querySelector(".hero .text")
     const navbar = document.querySelector("header")
     const image = document.querySelector(".background img")
     const svgs = document.querySelectorAll(".background svg")
@@ -32,7 +32,7 @@
         )
         .fromTo(
             firstsectiontext,
-            .1,
+            .4,
             { opacity: "0" },
             { opacity: "1" },
             "-=1"

@@ -52,6 +52,7 @@ header .navbar h2 {
 }
 
 header .navbar li {
+  margin: 0;
   font-family: 'Oswald', sans-serif;
   font-size: 30px;
   margin: 0 2px;
@@ -81,7 +82,11 @@ section.hero .wrapper {
 }
 
 section.hero .text {
+  background-color: rgba(0, 0, 0, 0.575);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
   position: relative;
+  -webkit-text-stroke-color: black;
   z-index: 10;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
@@ -90,24 +95,16 @@ section.hero .text {
   top: 50%;
   width: 100%;
   color: white;
-  /* I make websites */
   font-family: "Oswald", sans-serif;
-  font-size: 140px;
-  text-shadow: 10px 10px 0 black;
-}
-
-@media (max-width: 930px) {
-  section.hero .text {
-    font-size: 14vw;
-    text-shadow: 1vw 1vw 0 black;
-  }
+  font-size: clamp(30px, 14vw, 140px);
+  padding: 0 0 10px 0;
 }
 
 div.separator {
   position: relative;
   width: 100%;
+  background: #420202;
   height: 200px;
-  background: #380000;
   z-index: 100;
 }
 
@@ -252,9 +249,32 @@ section.projectsSection {
 }
 
 section.projectsSection .content {
+  max-width: 4000px;
+  height: 100%;
   width: 70%;
   margin: auto;
   background: white;
+}
+
+@media (max-width: 1084px) {
+  section.projectsSection .content {
+    width: 100%;
+  }
+}
+
+section.projectsSection .content h2 {
+  font-family: "Computer Modern", sans-serif;
+  border-bottom: 2px solid #d8d8d8;
+  font-size: 50px;
+  padding: 10px 0 9px 20px;
+  width: 90%;
+  margin: auto;
+}
+
+@media (max-width: 1084px) {
+  section.projectsSection .content h2 {
+    width: 100%;
+  }
 }
 
 html * {
